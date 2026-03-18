@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 585" width="508" height="585">
+  <rect width="508" height="585" fill="white" />
+  <rect x="20.0" y="348.8" width="255.0" height="216.6" fill="#AED6F1" opacity="0.6" stroke="none" />
+  <text x="147.5" y="457.1" text-anchor="middle" dominant-baseline="middle" font-size="38" fill="#555555" font-family="Arial">salon</text>
+  <rect x="275.0" y="348.8" width="213.6" height="216.6" fill="#A9DFBF" opacity="0.6" stroke="none" />
+  <text x="381.8" y="457.1" text-anchor="middle" dominant-baseline="middle" font-size="38" fill="#555555" font-family="Arial">cuisine</text>
+  <rect x="20.0" y="135.2" width="221.4" height="213.6" fill="#F9E79F" opacity="0.6" stroke="none" />
+  <text x="130.7" y="242.0" text-anchor="middle" dominant-baseline="middle" font-size="38" fill="#555555" font-family="Arial">chambre</text>
+  <rect x="241.4" y="135.2" width="247.2" height="213.6" fill="#F9E79F" opacity="0.6" stroke="none" />
+  <text x="365.0" y="242.0" text-anchor="middle" dominant-baseline="middle" font-size="38" fill="#555555" font-family="Arial">chambre</text>
+  <rect x="20.0" y="20.0" width="468.6" height="115.2" fill="#D7BDE2" opacity="0.6" stroke="none" />
+  <text x="254.3" y="77.6" text-anchor="middle" dominant-baseline="middle" font-size="20" fill="#555555" font-family="Arial">salle bain</text>
+  <line x1="20" y1="565.4" x2="488.6" y2="565.4" stroke="#000000" stroke-width="3" />
+  <line x1="488.6" y1="565.4" x2="488.6" y2="20.0" stroke="#000000" stroke-width="1.5" />
+  <line x1="488.6" y1="20.0" x2="20" y2="20.0" stroke="#000000" stroke-width="3" />
+  <line x1="20" y1="20.0" x2="20" y2="565.4" stroke="#000000" stroke-width="3" />
+  <line x1="275.0" y1="565.4" x2="275.0" y2="348.8" stroke="#000000" stroke-width="1.5" />
+  <line x1="275.0" y1="348.8" x2="20.0" y2="348.8" stroke="#000000" stroke-width="1.5" />
+  <line x1="488.6" y1="348.8" x2="275.0" y2="348.8" stroke="#000000" stroke-width="1.5" />
+  <line x1="275.0" y1="348.8" x2="275.0" y2="565.4" stroke="#000000" stroke-width="1.5" />
+  <line x1="20.0" y1="348.8" x2="241.4" y2="348.8" stroke="#000000" stroke-width="1.5" />
+  <line x1="241.4" y1="348.8" x2="241.4" y2="135.2" stroke="#000000" stroke-width="1.5" />
+  <line x1="241.4" y1="135.2" x2="20.0" y2="135.2" stroke="#000000" stroke-width="1.5" />
+  <line x1="241.4" y1="348.8" x2="488.6" y2="348.8" stroke="#000000" stroke-width="1.5" />
+  <line x1="488.6" y1="135.2" x2="241.4" y2="135.2" stroke="#000000" stroke-width="1.5" />
+  <line x1="241.4" y1="135.2" x2="241.4" y2="348.8" stroke="#000000" stroke-width="1.5" />
+  <line x1="20.0" y1="135.2" x2="488.6" y2="135.2" stroke="#000000" stroke-width="1.5" />
+  <line x1="488.6" y1="135.2" x2="488.6" y2="20.0" stroke="#000000" stroke-width="3" />
+  <text x="20" y="15" font-size="11" fill="#333333" font-family="Arial">T2_B — 7.8m × 9.1m — 71.0m²</text>
+</svg>
