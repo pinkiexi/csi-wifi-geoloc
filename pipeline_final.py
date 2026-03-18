@@ -1,25 +1,3 @@
-"""
-=============================================================================
-Pipeline Complet : Génération de Plans SVG → Simulation CSI Wi-Fi
-=============================================================================
-Auteur  : Hanane Chahri
-Contexte: Stage Orange Labs – Wi-Fi sensing pour géolocalisation indoor
-
-Ce script reproduit la tâche centrale du stage :
-    "automatiser la génération de données CSI à partir d'une liste
-     d'images de plans d'habitats"
-
-Approche : génération de plans SVG synthétiques mais réalistes
-    - Pas de dataset à télécharger
-    - Plans variés (Studio, T2, T3, T4) avec géométries différentes
-    - Même format SVG que CubiCasa5k → pipeline identique en production
-
-Usage :
-    python pipeline.py                    # 12 plans, 64 sous-porteuses
-    python pipeline.py --n_plans 20       # plus de plans
-    python pipeline.py --n_subcarriers 128
-=============================================================================
-"""
 
 import os
 import argparse
@@ -36,9 +14,8 @@ warnings.filterwarnings('ignore')
 
 np.random.seed(42)
 
-# =============================================================================
 # 1. GÉNÉRATEUR DE PLANS SVG RÉALISTES
-# =============================================================================
+
 
 # Dimensions typiques des pièces en mètres (min, max)
 DIMENSIONS_PIECES = {
@@ -394,9 +371,7 @@ def generer_dataset_svg(output_dir, n_plans=12, seed_base=0):
     return svg_paths
 
 
-# =============================================================================
 # 2. PARSING SVG → SEGMENTS DE MURS
-# =============================================================================
 
 def parse_svg_walls(svg_path, px_per_meter=60):
     """
@@ -460,9 +435,7 @@ def parse_svg_walls(svg_path, px_per_meter=60):
     return segments, bbox
 
 
-# =============================================================================
 # 3. SIMULATION CSI (modèle multitrajet — géométrie réelle)
-# =============================================================================
 
 def reflexion_image_miroir(pos_rx, pos_tx, segment):
     """
@@ -599,9 +572,7 @@ def placer_routeur(bbox, pieces_meta, offset=(1.0, 1.0)):
     return np.array([x_min + offset[0], y_min + offset[1]])
 
 
-# =============================================================================
 # 4. TRAITEMENT BATCH
-# =============================================================================
 
 def traiter_plan(svg_path, pieces_meta, n_subcarriers=64, pas=0.6):
     """
@@ -644,9 +615,7 @@ def traiter_plan(svg_path, pieces_meta, n_subcarriers=64, pas=0.6):
     return X, positions, meta
 
 
-# =============================================================================
 # 5. VISUALISATIONS
-# =============================================================================
 
 CMAP_PLANS = plt.cm.get_cmap('tab10')
 
@@ -886,9 +855,7 @@ def plot_geoloc_interne(resultats, n_affich=4):
     return fig
 
 
-# =============================================================================
 # MAIN
-# =============================================================================
 
 def main():
     parser = argparse.ArgumentParser(
