@@ -4,7 +4,7 @@
 
 ## Ce que fait ce projet
 
-Reproduit la tâche centrale du stage :
+
 > *"automatiser la génération de données CSI à partir d'une liste d'images de plans d'habitats"*
 
 ## Pipeline
