@@ -1,6 +1,6 @@
 # Pipeline CSI Wi-Fi — Géolocalisation Indoor Non Supervisée
 
-**Hanane Chahri** | Préparation stage Orange Labs – Belfort (réf. 2025-46877)
+**Hanane Chahri** 
 
 ## Ce que fait ce projet
 
